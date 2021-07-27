@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('https://i.pinimg.com/originals/27/6c/85/276c851e879565b746fc0421fb689590.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rain {
+    height: 100vh;
+    background: url('https://i.pinimg.com/originals/98/96/36/989636655d60762a45aab003af71aa92.png');
+    animation: rain 2s linear infinite;
+}
+
+.rain:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    animation: lightning 3s linear infinite;
+    opacity: 0;
+}
+
+@keyframes rain {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% -100%;
+    }
+}
+
+@keyframes lightning {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    11% {
+        opacity: 0.8;
+    }
+    14% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    21% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 0;
+    }
+    104% {
+        opacity: 0;
+    }
+}
